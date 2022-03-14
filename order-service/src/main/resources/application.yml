@@ -14,3 +14,10 @@ spring:
       host: localhost
       port: 27017
       database: orders
+logging:
+  level:
+    root: ERROR
+
+kafka:
+  order_placed_topic: order-placed-topic
+  create_order_topic: create-order-topic
