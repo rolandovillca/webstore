@@ -8,28 +8,23 @@
 		<version>2.6.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>shoppingCartCommandService</groupId>
-	<artifactId>shoppingcartcommandservice</artifactId>
+	<groupId>demo</groupId>
+	<artifactId>eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>shoppingcartcommandservice</name>
-	<description>Command Service For Shopping Cart</description>
+	<name>eureka-server</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
+		<spring-cloud.version>2021.0.1</spring-cloud.version>
 	</properties>
 	<dependencies>
-
-		<dependency>
-			<groupId>org.apache.kafka</groupId>
-			<artifactId>kafka-streams</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 
 		<dependency>
@@ -37,24 +32,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
 	</dependencies>
-
-<!--	<dependencyManagement>-->
-<!--		<dependencies>-->
-<!--			<dependency>-->
-<!--				<groupId>org.springframework.data</groupId>-->
-<!--				<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
-<!--				<version>2.6.4</version>-->
-<!--				<type>pom</type>-->
-<!--				<scope>import</scope>-->
-<!--			</dependency>-->
-<!--		</dependencies>-->
-<!--	</dependencyManagement>-->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>
