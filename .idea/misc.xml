@@ -4,10 +4,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/shoppingCartCommandService/pom.xml" />
+        <option value="$PROJECT_DIR$/order-service/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ProjectType">
