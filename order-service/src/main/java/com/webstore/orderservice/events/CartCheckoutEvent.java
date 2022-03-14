@@ -4,13 +4,13 @@ package com.webstore.orderservice.events;
  * @author kojusujan1111@gmail.com 14/03/22
  */
 
-public class CreateOrderEvent {
+public class CartCheckoutEvent {
     private String shoppingCartId;
 
-    public CreateOrderEvent() {
+    public CartCheckoutEvent() {
     }
 
-    public CreateOrderEvent(String shoppingCartId) {
+    public CartCheckoutEvent(String shoppingCartId) {
         this.shoppingCartId = shoppingCartId;
     }
 
@@ -20,5 +20,12 @@ public class CreateOrderEvent {
 
     public void setShoppingCartId(String shoppingCartId) {
         this.shoppingCartId = shoppingCartId;
+    }
+
+    @Override
+    public String toString() {
+        return "CartCheckoutEvent{" +
+                "shoppingCartId='" + shoppingCartId + '\'' +
+                '}';
     }
 }

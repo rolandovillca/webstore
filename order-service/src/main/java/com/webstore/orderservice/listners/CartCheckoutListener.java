@@ -1,14 +1,13 @@
 package com.webstore.orderservice.listners;
 
 import com.webstore.orderservice.domains.Order;
-import com.webstore.orderservice.events.CreateOrderEvent;
+import com.webstore.orderservice.events.CartCheckoutEvent;
 import com.webstore.orderservice.events.OrderEvent;
 import com.webstore.orderservice.events.OrderPlacedEvent;
 import com.webstore.orderservice.repositories.OrderRepository;
 import com.webstore.orderservice.senders.KafkaMessageSender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
@@ -20,32 +19,30 @@ import java.util.UUID;
  */
 
 @Service
-public class CreateOrderListener {
-    @Value("${create_order_topic:create-order-topic}")
-    private final String createOrderTopic = "";
-
-    Logger logger = LoggerFactory.getLogger(CreateOrderListener.class);
+public class CartCheckoutListener {
+    private static final String SHOPPING_CART_CHECKOUT_TOPIC = "shopping-cart-checkout-topic";
+    Logger logger = LoggerFactory.getLogger(CartCheckoutListener.class);
     private final OrderRepository orderRepository;
     private final KafkaMessageSender<OrderEvent> kafkaMessageSender;
 
-    public CreateOrderListener(OrderRepository orderRepository, KafkaMessageSender<OrderEvent> kafkaMessageSender) {
+    public CartCheckoutListener(OrderRepository orderRepository, KafkaMessageSender<OrderEvent> kafkaMessageSender) {
         this.orderRepository = orderRepository;
         this.kafkaMessageSender = kafkaMessageSender;
     }
 
-    @KafkaListener(topics = createOrderTopic)
-    public void receive(@Payload CreateOrderEvent createOrderEvent) {
-        logger.info("-- Create Order Message Received {} -- ", createOrderEvent);
-        Order order = prepareOrder(createOrderEvent);
+ /*   @KafkaListener(topics = SHOPPING_CART_CHECKOUT_TOPIC)*/
+    public void receive(@Payload CartCheckoutEvent cartCheckoutEvent) {
+        logger.info("-- Cart Checkout Message Received {} -- ", cartCheckoutEvent);
+        Order order = prepareOrder(cartCheckoutEvent);
         orderRepository.save(order);
         kafkaMessageSender.dispatchOrderPlacedEvent(new OrderPlacedEvent(order.getOrderId(), order.getCustomerId(), order.getShippingCartId()));
     }
 
-    private Order prepareOrder(CreateOrderEvent createOrderEvent) {
+    private Order prepareOrder(CartCheckoutEvent cartCheckoutEvent) {
         Order order = new Order();
         order.setOrderId(UUID.randomUUID().toString());
         order.setCustomerId(getLoggedInCustomerId());
-        order.setShippingCartId(createOrderEvent.getShoppingCartId());
+        order.setShippingCartId(cartCheckoutEvent.getShoppingCartId());
         return order;
     }
 

@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/shoppingCartCommandService/pom.xml" />
         <option value="$PROJECT_DIR$/order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
       </list>
     </option>
   </component>

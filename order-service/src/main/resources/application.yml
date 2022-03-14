@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: "optional:configserver:"
   kafka:
     bootstrap-servers: localhost:9092
     consumer:
@@ -16,8 +18,13 @@ spring:
       database: orders
 logging:
   level:
-    root: ERROR
+    root: INFO
 
 kafka:
   order_placed_topic: order-placed-topic
-  create_order_topic: create-order-topic
+  shopping_cart_checkout_topic: shopping-cart-checkout-topic
+
+server:
+  port: 8085
+
+

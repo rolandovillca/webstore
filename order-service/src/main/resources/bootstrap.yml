@@ -1,3 +1,8 @@
 spring:
   application:
     name: order-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+
