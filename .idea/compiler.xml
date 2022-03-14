@@ -7,10 +7,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shoppingCartCommandService" />
+        <module name="product-service" />
+        <module name="order-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="shoppingCartCommandService" target="1.5" />
+      <module name="Ecom" target="1.5" />
+      <module name="order-service" target="11" />
+      <module name="product-service" target="17" />
+      <module name="shoppingCartCommandService" target="11" />
+      <module name="Webshop" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="order-service" options="-parameters" />
+      <module name="product-service" options="-parameters" />
+      <module name="shoppingCartCommandService" options="-parameters" />
+    </option>
   </component>
 </project>
