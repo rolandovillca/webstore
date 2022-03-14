@@ -9,11 +9,13 @@
         <module name="shoppingcartcommandservice" />
         <module name="order-service" />
         <module name="customer-service" />
+        <module name="eureka-server" />
         <module name="ProductService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="customer-service" target="11" />
+      <module name="eureka-server" target="11" />
       <module name="order-service" target="11" />
       <module name="ProductService" target="17" />
       <module name="shoppingcartcommandservice" target="11" />
@@ -24,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ProductService" options="-parameters" />
       <module name="customer-service" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="shoppingcartcommandservice" options="-parameters" />
     </option>
