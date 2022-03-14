@@ -12,6 +12,7 @@
         <module>shoppingCartCommandService</module>
         <module>order-service</module>
         <module>customer-service</module>
+        <module>eureka-server</module>
     </modules>
 
 </project>
