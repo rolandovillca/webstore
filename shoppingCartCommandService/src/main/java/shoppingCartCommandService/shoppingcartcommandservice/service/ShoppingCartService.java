@@ -2,9 +2,11 @@ package shoppingCartCommandService.shoppingcartcommandservice.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 import shoppingCartCommandService.shoppingcartcommandservice.kafka.KafkaCreateOrderSender;
 import shoppingCartCommandService.shoppingcartcommandservice.kafka.KafkaShoppingCartQuerySender;
 import shoppingCartCommandService.shoppingcartcommandservice.model.CartLine;
+import shoppingCartCommandService.shoppingcartcommandservice.model.Product;
 import shoppingCartCommandService.shoppingcartcommandservice.model.ShoppingCart;
 import shoppingCartCommandService.shoppingcartcommandservice.repository.ShoppingCartRepository;
 
@@ -18,11 +20,18 @@ public class ShoppingCartService {
     private KafkaShoppingCartQuerySender kafkaShoppingCartQuerySender;
     @Autowired
     private KafkaCreateOrderSender kafkaCreateOrderSender;
+    @Autowired
+    private RestTemplate restTemplate;
 
-    public ShoppingCart addProduct(int cartNumber, CartLine cartLine) {
+    public ShoppingCart addProduct(int cartNumber, List<CartLine> cartLines) {
         //Need to check if cart has enough in stock
         ShoppingCart cart = shoppingCartRepository.findById(cartNumber).orElseThrow(() -> new RuntimeException("Cart Not Found"));
-        cart.addProduct(cartLine);
+        for (CartLine cartLine : cartLines) {
+            if(!this.hasStock(cartLine)) {
+                throw new RuntimeException("Stock not available for product with ID:"+cartLine.getProductId());
+            }
+        }
+        cart.setProducts(cartLines);
         kafkaShoppingCartQuerySender.send("shopping_cart_query_topic", cart);
         return shoppingCartRepository.save(cart);
     }
@@ -40,7 +49,9 @@ public class ShoppingCartService {
         List<CartLine> products = cart.getProducts();
         CartLine previousCartLine = getCurrentCartLine(cartNumber, products);
         if(newCartLine.getQuantity() > previousCartLine.getQuantity()) {
-            //Need to check if product has enough quantity in stock
+            if(!this.hasStock(newCartLine)) {
+                throw new RuntimeException("Stock not available for product with ID:"+newCartLine.getProductId());
+            }
         }
         cart.replaceCartLine(previousCartLine, newCartLine);
         kafkaShoppingCartQuerySender.send("shopping_cart_query_topic", cart);
@@ -60,5 +71,11 @@ public class ShoppingCartService {
                 return cartLine;
         }
         return null;
+    }
+
+    private boolean hasStock(CartLine cartLine) {
+        //use eureka server and seperate interface for api call.
+        Product prod = restTemplate.getForEntity("localhost:8081/products/"+cartLine.getProductId(), Product.class).getBody();
+        return prod.getNo_in_stock() < cartLine.getQuantity() ? true : false;
     }
 }
