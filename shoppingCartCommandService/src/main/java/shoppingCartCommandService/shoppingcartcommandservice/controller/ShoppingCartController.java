@@ -8,6 +8,8 @@ import shoppingCartCommandService.shoppingcartcommandservice.model.CartLine;
 import shoppingCartCommandService.shoppingcartcommandservice.model.ShoppingCart;
 import shoppingCartCommandService.shoppingcartcommandservice.service.ShoppingCartService;
 
+import java.util.List;
+
 @RestController
 public class ShoppingCartController {
 
@@ -21,8 +23,8 @@ public class ShoppingCartController {
     }
 
     @PostMapping("/addProduct/{cartNumber}")
-    public ResponseEntity<ShoppingCart> addProduct(@PathVariable int cartNumber, @RequestBody CartLine cartLine) {
-        return new ResponseEntity<>(shoppingCartService.addProduct(cartNumber, cartLine), HttpStatus.OK);
+    public ResponseEntity<ShoppingCart> addProduct(@PathVariable int cartNumber, @RequestBody List<CartLine> cartLines) {
+        return new ResponseEntity<>(shoppingCartService.addProduct(cartNumber, cartLines), HttpStatus.OK);
     }
 
     @PostMapping("/removeProduct/{cartNumber}")
