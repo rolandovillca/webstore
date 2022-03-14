@@ -8,25 +8,15 @@
 		<version>2.6.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>shoppingCartCommandService</groupId>
-	<artifactId>shoppingcartcommandservice</artifactId>
+	<groupId>shoppingCartQueryService</groupId>
+	<artifactId>shoppingcartqueryservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>shoppingcartcommandservice</name>
-	<description>Command Service For Shopping Cart</description>
+	<name>shoppingcartqueryservice</name>
+	<description>Query Service For Shopping Cart</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
-
-		<dependency>
-			<groupId>org.apache.kafka</groupId>
-			<artifactId>kafka-streams</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -39,22 +29,10 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
 		</dependency>
 	</dependencies>
-
-<!--	<dependencyManagement>-->
-<!--		<dependencies>-->
-<!--			<dependency>-->
-<!--				<groupId>org.springframework.data</groupId>-->
-<!--				<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
-<!--				<version>2.6.4</version>-->
-<!--				<type>pom</type>-->
-<!--				<scope>import</scope>-->
-<!--			</dependency>-->
-<!--		</dependencies>-->
-<!--	</dependencyManagement>-->
 
 	<build>
 		<plugins>
