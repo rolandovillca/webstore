@@ -1,0 +1,14 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      authentication-database: admin
+      username: root
+      password: root
+      database: products
+
+server:
+  port=: 8081

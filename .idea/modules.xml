@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-
+      <module fileurl="file://$PROJECT_DIR$/ProductService/ProductService.iml" filepath="$PROJECT_DIR$/ProductService/ProductService.iml" />
       <module fileurl="file://$PROJECT_DIR$/Webshop.iml" filepath="$PROJECT_DIR$/Webshop.iml" />
       <module fileurl="file://$PROJECT_DIR$/order-service/order-service.iml" filepath="$PROJECT_DIR$/order-service/order-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/productService/product-service.iml" filepath="$PROJECT_DIR$/productService/product-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shoppingCartCommandService/shoppingCartCommandService.iml" filepath="$PROJECT_DIR$/shoppingCartCommandService/shoppingCartCommandService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shoppingCartCommandService/shoppingcartcommandservice.iml" filepath="$PROJECT_DIR$/shoppingCartCommandService/shoppingcartcommandservice.iml" />
     </modules>
   </component>
 </project>
