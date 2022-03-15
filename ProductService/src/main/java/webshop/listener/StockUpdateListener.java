@@ -12,7 +12,6 @@ import webshop.service.ProductService;
 @Component
 @Slf4j
 public class StockUpdateListener {
-
     private final ProductService productService;
 
     public StockUpdateListener(ProductService productService) {
@@ -21,22 +20,19 @@ public class StockUpdateListener {
 
     @KafkaListener(topics = "order-placed-topic")
     public void handleUpdateStock(@Payload OrderPlacedEvent orderPlacedEvent) {
-
         ShoppingCart shoppingCart = getShoppingCartDetail(orderPlacedEvent.getShippingCartId());
-
         shoppingCart.getProducts().forEach(cartLine -> {
             Product product = productService.findById(cartLine.getProductId());
-            int quantity = product.getNoInStock() - productStockDTO.qty();
+            int quantity = product.getNoInStock() - cartLine.getQuantity();
             log.info("Product quantity updated with value:" + quantity);
             product.setNoInStock(quantity);
             productService.update(product);
-
         });
-
-
     }
 
     private ShoppingCart getShoppingCartDetail(String shippingCartId) {
+
+return new ShoppingCart();
     }
 
     private record ProductStockDTO(String productNumber, int qty) {

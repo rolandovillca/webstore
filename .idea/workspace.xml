@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/webshop/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/webshop/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lab-7-soln" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -60,6 +64,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ProductService/src/main/java/webshop/domain" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/model" />
       <recent name="$PROJECT_DIR$/config-server" />
@@ -68,10 +73,11 @@
       <recent name="$PROJECT_DIR$/config-files" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="shoppingCartQueryService.shoppingcartqueryservice.model" />
+      <recent name="webshop.events" />
       <recent name="webshop.controller" />
       <recent name="shoppingCartQueryService.shoppingcartqueryservice" />
       <recent name="shoppingCartCommandService.shoppingcartcommandservice.configs" />
-      <recent name="shoppingCartCommandService.shoppingcartcommandservice.events" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -192,6 +198,7 @@
       <workItem from="1647311012928" duration="3948000" />
       <workItem from="1647315275761" duration="20000" />
       <workItem from="1647349569277" duration="9671000" />
+      <workItem from="1647381333921" duration="427000" />
     </task>
     <servers />
   </component>
