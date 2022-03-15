@@ -6,10 +6,7 @@ import com.webstore.orderservice.listners.CartCheckoutListener;
 import com.webstore.orderservice.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,8 +29,9 @@ public class OrderController {
     }
 
     @PostMapping
-    public void place() {
-        this.cartCheckoutListener.receive(new CartCheckoutEvent("1"));
+    public void place(@RequestBody CartCheckoutEvent cartCheckoutEvent) {
+        System.out.println(" --- ORDER PLACED ---");
+        this.cartCheckoutListener.receive(cartCheckoutEvent);
     }
 
 

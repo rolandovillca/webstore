@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/webshop/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/controllers/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lab-8-soln" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -80,7 +85,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Shoppingcartquery">
+  <component name="RunManager" selected="Spring Boot.OrderService">
     <configuration name="ConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.webstore.configserver.ConfigServerApplication" />
@@ -137,6 +142,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringCloudGateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.webshop.springcloudgateway.SpringCloudGatewayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="order-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -154,6 +167,7 @@
       <item itemvalue="Spring Boot.CustomerService" />
       <item itemvalue="Spring Boot.EurekaServer" />
       <item itemvalue="Spring Boot.Shoppingcartquery" />
+      <item itemvalue="Spring Boot.SpringCloudGateway" />
     </list>
     <recent_temporary>
       <list>
@@ -181,6 +195,7 @@
       <workItem from="1647309640886" duration="968000" />
       <workItem from="1647311012928" duration="3948000" />
       <workItem from="1647315275761" duration="20000" />
+      <workItem from="1647349569277" duration="8280000" />
     </task>
     <servers />
   </component>
@@ -222,6 +237,26 @@
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
