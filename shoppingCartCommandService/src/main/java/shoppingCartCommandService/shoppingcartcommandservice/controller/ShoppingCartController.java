@@ -23,8 +23,8 @@ public class ShoppingCartController {
     }
 
     @PostMapping("addProduct/{cartNumber}")
-    public ResponseEntity<ShoppingCart> addProduct(@PathVariable String cartNumber, @RequestBody List<CartLine> cartLines) {
-        return new ResponseEntity<>(shoppingCartService.addProduct(cartNumber, cartLines), HttpStatus.OK);
+    public ResponseEntity<ShoppingCart> addProduct(@PathVariable String cartNumber, @RequestBody CartLine cartLine) {
+        return new ResponseEntity<>(shoppingCartService.addProduct(cartNumber, cartLine), HttpStatus.OK);
     }
 
     @PostMapping("removeProduct/{cartNumber}")

@@ -39,7 +39,12 @@ public class ShoppingCart {
     }
 
     public void addProduct(CartLine cartLine) {
-        products.add(cartLine);
+        CartLine cartLineAlreadyPresent = checkIfPresent(cartLine);
+        if(cartLineAlreadyPresent != null) {
+            cartLineAlreadyPresent.setQuantity(cartLineAlreadyPresent.getQuantity()+cartLine.getQuantity());
+        } else {
+            products.add(cartLine);
+        }
     }
 
     public void removeProduct(CartLine cartLine) {
@@ -49,5 +54,21 @@ public class ShoppingCart {
     public void replaceCartLine(CartLine previousCartLine, CartLine newCartLine) {
         int index = products.indexOf(previousCartLine);
         products.set(index, newCartLine);
+    }
+
+    @Override
+    public String toString() {
+        return "ShoppingCart{" +
+                "shoppingCartNumber='" + shoppingCartNumber + '\'' +
+                ", products=" + products +
+                '}';
+    }
+
+    private CartLine checkIfPresent(CartLine cartLine) {
+        for(CartLine cartLine1: products) {
+            if(cartLine.getProductNo() == cartLine1.getProductNo())
+                return cartLine1;
+        }
+        return null;
     }
 }
