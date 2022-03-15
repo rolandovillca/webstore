@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/config-files/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-files/customer-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-files/order-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-files/product-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-files/shopping-cart-command-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-files/shopping-cart-query-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-cloud-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +194,7 @@
       <workItem from="1647309640886" duration="968000" />
       <workItem from="1647311012928" duration="3948000" />
       <workItem from="1647315275761" duration="20000" />
-      <workItem from="1647349569277" duration="9048000" />
+      <workItem from="1647349569277" duration="9671000" />
     </task>
     <servers />
   </component>
