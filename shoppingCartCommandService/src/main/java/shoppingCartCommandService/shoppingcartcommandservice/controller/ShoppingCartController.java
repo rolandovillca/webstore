@@ -11,7 +11,6 @@ import shoppingCartCommandService.shoppingcartcommandservice.service.ShoppingCar
 import java.util.List;
 
 @RestController
-@RequestMapping("shopping-cart-command-service")
 public class ShoppingCartController {
 
     @Autowired
@@ -42,7 +41,6 @@ public class ShoppingCartController {
     public void checkout(@PathVariable String cartNumber) {
         shoppingCartService.checkout(cartNumber);
     }
-
 
 
 }

@@ -10,19 +10,27 @@ spring:
         - id: OrderService
           uri: lb://order-service
           predicates:
-            - Path=/orders/**
+            - Path=/order-service/**
+          filters:
+            - RewritePath=/order-service(?<remains>/?.*), $\{remains}
         - id: ProductService
           uri: lb://product-service
           predicates:
-            - Path=/products/**
+            - Path=/product-service/**
+          filters:
+            - RewritePath=/product-service(?<remains>/?.*), $\{remains}
         - id: ShoppingCartCommandService
           uri: lb://shopping-cart-command-service
           predicates:
             - Path=/shopping-cart-command-service/**
+          filters:
+            - RewritePath=/shopping-cart-command-service(?<remains>/?.*), $\{remains}
         - id: ShoppingCartQueryService
           uri: lb://shopping-cart-query-service
           predicates:
             - Path=/shopping-cart-query-service/**
+          filters:
+            - RewritePath=/shopping-cart-query-service(?<remains>/?.*), $\{remains}
   zipkin:
     base-url: http://localhost:9411/
 
