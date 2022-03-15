@@ -17,31 +17,30 @@ public class ShoppingCartController {
     private ShoppingCartService shoppingCartService;
 
 
-    @GetMapping("/createCart")
+    @GetMapping("createCart")
     public ResponseEntity<ShoppingCart> createShoppingCart() {
         return new ResponseEntity(shoppingCartService.save(), HttpStatus.OK);
     }
 
-    @PostMapping("/addProduct/{cartNumber}")
+    @PostMapping("addProduct/{cartNumber}")
     public ResponseEntity<ShoppingCart> addProduct(@PathVariable String cartNumber, @RequestBody List<CartLine> cartLines) {
         return new ResponseEntity<>(shoppingCartService.addProduct(cartNumber, cartLines), HttpStatus.OK);
     }
 
-    @PostMapping("/removeProduct/{cartNumber}")
+    @PostMapping("removeProduct/{cartNumber}")
     public ResponseEntity<ShoppingCart> removeProduct(@PathVariable String cartNumber, @RequestBody CartLine cartLine) {
         return new ResponseEntity<>(shoppingCartService.removeProduct(cartNumber, cartLine), HttpStatus.OK);
     }
 
-    @PostMapping("/changeQuantity/{cartNumber}")
+    @PostMapping("changeQuantity/{cartNumber}")
     public ResponseEntity<ShoppingCart> changeQuantity(@PathVariable String cartNumber, @RequestBody CartLine cartLine) {
         return new ResponseEntity<>(shoppingCartService.changeQuantity(cartNumber, cartLine), HttpStatus.OK);
     }
 
-    @PostMapping("/checkout/{cartNumber}")
+    @PostMapping("checkout/{cartNumber}")
     public void checkout(@PathVariable String cartNumber) {
         shoppingCartService.checkout(cartNumber);
     }
-
 
 
 }
