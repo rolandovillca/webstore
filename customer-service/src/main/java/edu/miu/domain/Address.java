@@ -2,7 +2,6 @@ package edu.miu.domain;
 
 import lombok.*;
 
-@Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
