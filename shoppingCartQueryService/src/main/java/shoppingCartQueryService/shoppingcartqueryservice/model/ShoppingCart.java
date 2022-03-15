@@ -1,4 +1,4 @@
-package shoppingCartCommandService.shoppingcartcommandservice.model;
+package shoppingCartQueryService.shoppingcartqueryservice.model;
 
 
 import org.springframework.data.annotation.Id;

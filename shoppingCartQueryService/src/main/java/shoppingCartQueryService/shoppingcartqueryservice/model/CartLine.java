@@ -1,11 +1,6 @@
-package shoppingCartCommandService.shoppingcartcommandservice.model;
+package shoppingCartQueryService.shoppingcartqueryservice.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document
 public class CartLine {
-    @Id
     private String cartLineNumber;
     private int productId;
     private int quantity;
