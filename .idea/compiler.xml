@@ -2,28 +2,43 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shoppingcartcommandservice" />
         <module name="config-server" />
+        <module name="customer-service" />
+        <module name="ProductService" />
+        <module name="shoppingcartcommandservice" />
         <module name="order-service" />
         <module name="shoppingCartCommandService" />
+        <module name="eureka-server" />
+        <module name="shoppingcartqueryservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-server" target="11" />
+      <module name="customer-service" target="11" />
+      <module name="eureka-server" target="11" />
       <module name="order-service" target="11" />
+      <module name="ProductService" target="17" />
       <module name="shoppingcartcommandservice" target="11" />
       <module name="shoppingCartCommandService" target="1.5" />
+      <module name="shoppingcartqueryservice" target="11" />
+      <module name="Webshop" target="1.5" />
+      <module name="webstore" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ProductService" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="customer-service" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="shoppingcartcommandservice" options="-parameters" />
+      <module name="shoppingcartqueryservice" options="-parameters" />
     </option>
   </component>
 </project>

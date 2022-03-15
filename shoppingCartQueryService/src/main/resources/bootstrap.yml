@@ -1,11 +1,7 @@
 spring:
   application:
-    name: product-service
+    name: shopping-cart-query-service
   cloud:
     config:
       uri: http://localhost:8888
       profile: default
-
-
-
-
