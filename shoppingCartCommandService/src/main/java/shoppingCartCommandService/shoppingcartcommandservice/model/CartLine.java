@@ -1,38 +1,19 @@
 package shoppingCartCommandService.shoppingcartcommandservice.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document
 public class CartLine {
-    @Id
-    private String cartLineNumber;
-    private int productId;
+
+    private String productNo;
     private int quantity;
 
     public CartLine() {
     }
 
-    public CartLine(String cartLineNumber, int productId, int quantity) {
-        this.cartLineNumber = cartLineNumber;
-        this.productId = productId;
-        this.quantity = quantity;
+    public String getProductNo() {
+        return productNo;
     }
 
-    public String getCartLineNumber() {
-        return cartLineNumber;
-    }
-
-    public void setCartLineNumber(String cartLineNumber) {
-        this.cartLineNumber = cartLineNumber;
-    }
-
-    public int getProductId() {
-        return productId;
-    }
-
-    public void setProductId(int productId) {
-        this.productId = productId;
+    public void setProductNo(String productNo) {
+        this.productNo = productNo;
     }
 
     public int getQuantity() {

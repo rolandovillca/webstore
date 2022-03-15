@@ -1,4 +1,4 @@
-package shoppingCartQueryService.shoppingcartqueryservice.model;
+package webshop.domain;
 
 public class CartLine {
     private String productNo;
@@ -7,12 +7,18 @@ public class CartLine {
     public CartLine() {
     }
 
-    public String getProductNo() {
+    public CartLine(String productNo, int quantity) {
+        this.productNo = productNo;
+        this.quantity = quantity;
+    }
+
+
+    public String getProductId() {
         return productNo;
     }
 
-    public void setProductNo(String productNo) {
-        this.productNo = productNo;
+    public void setProductId(String productId) {
+        this.productNo = productId;
     }
 
     public int getQuantity() {
