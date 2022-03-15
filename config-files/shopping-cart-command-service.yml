@@ -1,0 +1,28 @@
+kafka:
+  order_placed_topic: order-placed-topic
+app:
+  topic:
+    shopping_cart_query_topic: shopping_cart_query_topic
+    create_order_topic: create_order_topic
+
+server:
+  port: 8083
+
+logging:
+  level:
+    root: INFO
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: command-services
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+  data:
+    mongodb:
+      database: shopping_cart_command_db
