@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="" />
+    <list default="true" id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/config-files/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-files/customer-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-files/order-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-files/product-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-files/shopping-cart-command-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-files/shopping-cart-query-service.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lab-8-soln" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -58,8 +66,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/model" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/model" />
       <recent name="$PROJECT_DIR$/config-server" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -189,7 +197,7 @@
       <workItem from="1647309640886" duration="968000" />
       <workItem from="1647311012928" duration="3948000" />
       <workItem from="1647315275761" duration="20000" />
-      <workItem from="1647349569277" duration="8628000" />
+      <workItem from="1647349569277" duration="9048000" />
     </task>
     <servers />
   </component>

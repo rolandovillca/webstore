@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/rolandovillca/webstore.git/config-files
+          uri: https://github.com/SujanKoju/config-files.git
           default-label: master
           clone-on-start: true
 encrypt:
