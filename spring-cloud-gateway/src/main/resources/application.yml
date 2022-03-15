@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: spring-cloud-gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: OrderService
+          uri: lb://order-service
+          predicates:
+            - Path=/orders/**
+        - id: ProductService
+          uri: lb://product-service
+          predicates:
+            - Path=/products/**
+        - id: ShoppingCartCommandService
+          uri: lb://shopping-cart-command-service
+          predicates:
+            - Path=/shopping-cart-command-service/**
+        - id: ShoppingCartQueryService
+          uri: lb://shopping-cart-query-service
+          predicates:
+            - Path=/shopping-cart-query-service/**
+  zipkin:
+    base-url: http://localhost:9411/
+
+server:
+  port: 8079
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

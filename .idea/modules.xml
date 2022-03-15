@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/shoppingCartCommandService/shoppingCartCommandService.iml" filepath="$PROJECT_DIR$/shoppingCartCommandService/shoppingCartCommandService.iml" />
       <module fileurl="file://$PROJECT_DIR$/shoppingCartCommandService/shoppingcartcommandservice.iml" filepath="$PROJECT_DIR$/shoppingCartCommandService/shoppingcartcommandservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/shoppingCartQueryService/shoppingcartqueryservice.iml" filepath="$PROJECT_DIR$/shoppingCartQueryService/shoppingcartqueryservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway/spring-cloud-gateway.iml" filepath="$PROJECT_DIR$/spring-cloud-gateway/spring-cloud-gateway.iml" />
     </modules>
   </component>
 </project>

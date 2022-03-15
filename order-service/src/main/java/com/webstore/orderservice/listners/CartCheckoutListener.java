@@ -8,7 +8,6 @@ import com.webstore.orderservice.repositories.OrderRepository;
 import com.webstore.orderservice.senders.KafkaMessageSender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 
@@ -35,14 +34,14 @@ public class CartCheckoutListener {
         logger.info("-- Cart Checkout Message Received {} -- ", cartCheckoutEvent);
         Order order = prepareOrder(cartCheckoutEvent);
         orderRepository.save(order);
-        kafkaMessageSender.dispatchOrderPlacedEvent(new OrderPlacedEvent(order.getOrderId(), order.getCustomerId(), order.getShippingCartId()));
+        kafkaMessageSender.dispatchOrderPlacedEvent(new OrderPlacedEvent(order.getOrderId(), order.getCustomerId(), order.getShoppingCartId()));
     }
 
     private Order prepareOrder(CartCheckoutEvent cartCheckoutEvent) {
         Order order = new Order();
         order.setOrderId(UUID.randomUUID().toString());
         order.setCustomerId(getLoggedInCustomerId());
-        order.setShippingCartId(cartCheckoutEvent.getShoppingCartId());
+        order.setShoppingCartId(cartCheckoutEvent.getShoppingCartId());
         return order;
     }
 
