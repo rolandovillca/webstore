@@ -5,28 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/configs/KafkaConfigs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/events/CartCheckoutEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/configs/KafkaConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/controller/ShoppingCartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/kafka/KafkaShoppingCartListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/model/CartLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/model/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/repository/ShoppingCartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/service/ShoppingCartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/ShoppingcartcommandserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/ShoppingcartcommandserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/controller/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/kafka/KafkaCreateOrderSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/kafka/KafkaCreateOrderSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/CartLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/CartLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/ShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/repository/ShoppingCartRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/ShoppingcartqueryserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/ShoppingcartqueryserviceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/model" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -81,6 +60,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/model" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/config-server" />
     </key>
@@ -199,7 +179,8 @@
       <workItem from="1647291644413" duration="1150000" />
       <workItem from="1647293085048" duration="2681000" />
       <workItem from="1647309640886" duration="968000" />
-      <workItem from="1647311012928" duration="3530000" />
+      <workItem from="1647311012928" duration="3948000" />
+      <workItem from="1647315275761" duration="20000" />
     </task>
     <servers />
   </component>
