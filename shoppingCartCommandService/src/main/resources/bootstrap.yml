@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: shopping-cart-command-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      profile: default
+
+
+
+

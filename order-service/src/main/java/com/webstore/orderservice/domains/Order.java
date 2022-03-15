@@ -10,15 +10,15 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Order {
     @Id
     private String orderId;
-    private String shippingCartId;
+    private String shoppingCartId;
     private String customerId;
 
     public Order() {
     }
 
-    public Order(String orderId, String shippingCartId, String customerId) {
+    public Order(String orderId, String shoppingCartId, String customerId) {
         this.orderId = orderId;
-        this.shippingCartId = shippingCartId;
+        this.shoppingCartId = shoppingCartId;
         this.customerId = customerId;
     }
 
@@ -30,12 +30,12 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public String getShippingCartId() {
-        return shippingCartId;
+    public String getShoppingCartId() {
+        return shoppingCartId;
     }
 
-    public void setShippingCartId(String shippingCartId) {
-        this.shippingCartId = shippingCartId;
+    public void setShoppingCartId(String shoppingCartId) {
+        this.shoppingCartId = shoppingCartId;
     }
 
     public String getCustomerId() {
@@ -50,7 +50,7 @@ public class Order {
     public String toString() {
         return "Order{" +
                 "orderId='" + orderId + '\'' +
-                ", shippingCartId='" + shippingCartId + '\'' +
+                ", shippingCartId='" + shoppingCartId + '\'' +
                 ", customerId='" + customerId + '\'' +
                 '}';
     }

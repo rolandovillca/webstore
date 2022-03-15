@@ -38,4 +38,58 @@ HTTP method : GET
 api : http://localhost:8081/products
 
 
+# Customer Service APIs
+Method GET ALL:
 
+API: http://localhost:8888/api/v1/customer/all
+
+# Method POST:
+API: http://localhost:8888/api/v1/customer/add
+
+{
+"customerId": "c100",
+"firstName": "John",
+"lastName": "Smith",
+"address":
+{
+"street": "1000 N 4th St",
+"city": "Fairfield",
+"zipcode": "5555555"
+},
+"phone": "641-111-2222",
+"email": "user.mail.com"
+}
+
+# Method PUT:
+API: http://localhost:8888/api/v1/customer/update
+
+{
+"customerId": "c100",
+"firstName": "John Updated",
+"lastName": "Smith",
+"address":
+{
+"street": "1000 N 4th St",
+"city": "Fairfield",
+"zipcode": "7777777"
+},
+"phone": "641-111-2222",
+"email": "user_updated@mail.com"
+}
+
+# Method DELETE:
+API: http://localhost:8888/api/v1/customer/remove
+
+{
+"customerId": "c100",
+"firstName": "John",
+"lastName": "Smith",
+"address":
+{
+"street": "1000 N 4th St",
+"city": "Fairfield",
+"zipcode": "5555555"
+},
+"phone": "641-111-2222",
+"email": "user.mail.com"
+}
