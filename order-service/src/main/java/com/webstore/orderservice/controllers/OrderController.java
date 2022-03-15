@@ -5,6 +5,7 @@ import com.webstore.orderservice.events.CartCheckoutEvent;
 import com.webstore.orderservice.listners.CartCheckoutListener;
 import com.webstore.orderservice.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +18,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("orders")
+@RefreshScope
 public class OrderController {
     private final CartCheckoutListener cartCheckoutListener;
     private final OrderRepository orderRepository;
