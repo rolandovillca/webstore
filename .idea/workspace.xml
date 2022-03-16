@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/WebShopRestClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/domain/CartLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/domain/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/service/ShoppingCartQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/service/ShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcartqueryservice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/RestConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/WebShopRestClientApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/test/java/books/BookRestClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/src/test/java/webshop/WebshopRestClientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/repository/ShoppingCartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/service/ShoppingCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="26MAj9btLjwKhleCn5uk6Hk6v7P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lab-12-soln/part-2" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.32068965" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ProductService/src/main/java/webshop/domain" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/model" />
+      <recent name="$PROJECT_DIR$/config-server" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config-files" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="shoppingCartQueryService.shoppingcartqueryservice.model" />
+      <recent name="webshop.events" />
+      <recent name="webshop.controller" />
+      <recent name="shoppingCartQueryService.shoppingcartqueryservice" />
+      <recent name="shoppingCartCommandService.shoppingcartcommandservice.configs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProductService">
+    <configuration name="ConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.webstore.configserver.ConfigServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="customer-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.miu.CustomerServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="demo.EurekaServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.webstore.orderservice.OrderServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ProductService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="webshop.ProductServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingCartCommand" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shoppingcartcommandservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="shoppingCartCommandService.shoppingcartcommandservice.ShoppingcartcommandserviceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Shoppingcartquery" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="shoppingcartqueryservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="shoppingCartQueryService.shoppingcartqueryservice.ShoppingcartqueryserviceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringCloudGateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-cloud-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.webshop.springcloudgateway.SpringCloudGatewayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebShopRestClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="WebStoreRestClient" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="webshop.WebShopRestClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="order-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="order-service/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.order-service: Compose Deployment" />
+      <item itemvalue="Spring Boot.OrderService" />
+      <item itemvalue="Spring Boot.ShoppingCartCommand" />
+      <item itemvalue="Spring Boot.ProductService" />
+      <item itemvalue="Spring Boot.ConfigServer" />
+      <item itemvalue="Spring Boot.CustomerService" />
+      <item itemvalue="Spring Boot.EurekaServer" />
+      <item itemvalue="Spring Boot.Shoppingcartquery" />
+      <item itemvalue="Spring Boot.SpringCloudGateway" />
+      <item itemvalue="Spring Boot.WebShopRestClientApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.order-service: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="" />
+      <created>1647223214635</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647223214635</updated>
+      <workItem from="1647223217708" duration="1319000" />
+      <workItem from="1647261771689" duration="972000" />
+      <workItem from="1647262757300" duration="793000" />
+      <workItem from="1647263572870" duration="4664000" />
+      <workItem from="1647272011000" duration="291000" />
+      <workItem from="1647272317291" duration="8294000" />
+      <workItem from="1647280633327" duration="7923000" />
+      <workItem from="1647291644413" duration="1150000" />
+      <workItem from="1647293085048" duration="2681000" />
+      <workItem from="1647309640886" duration="968000" />
+      <workItem from="1647311012928" duration="3948000" />
+      <workItem from="1647315275761" duration="20000" />
+      <workItem from="1647349569277" duration="9671000" />
+      <workItem from="1647381333921" duration="427000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.google.inject:guice" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.kafka:kafka-clients" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

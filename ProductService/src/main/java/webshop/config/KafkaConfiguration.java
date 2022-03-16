@@ -1,3 +1,4 @@
+/*
 package webshop.config;
 
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -36,3 +37,4 @@ public class KafkaConfiguration {
     }
 
 }
+*/
