@@ -19,7 +19,7 @@ public class ShoppingCartController {
 
     @GetMapping("createCart")
     public ResponseEntity<ShoppingCart> createShoppingCart() {
-        return new ResponseEntity(shoppingCartService.save(), HttpStatus.OK);
+        return new ResponseEntity<>(shoppingCartService.save(), HttpStatus.OK);
     }
 
     @PostMapping("addProduct/{cartNumber}")
