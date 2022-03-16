@@ -2,35 +2,29 @@ package webshop.domain;
 
 
 public class Product {
-
-    private String product_no;
-
+    private String productNo;
     private String name;
-
     private double price;
-
     private String description;
-
-    private int no_in_stock;
+    private int noInStock;
 
     public Product() {
-
     }
 
-    public Product(String product_no, String name, double price, String description, int no_in_stock) {
-        this.product_no = product_no;
+    public Product(String productNo, String name, double price, String description, int noInStock) {
+        this.productNo = productNo;
         this.name = name;
         this.price = price;
         this.description = description;
-        this.no_in_stock = no_in_stock;
+        this.noInStock = noInStock;
     }
 
-    public String getProduct_no() {
-        return product_no;
+    public String getProductNo() {
+        return productNo;
     }
 
-    public void setProduct_no(String product_no) {
-        this.product_no = product_no;
+    public void setProductNo(String productNo) {
+        this.productNo = productNo;
     }
 
     public String getName() {
@@ -57,22 +51,22 @@ public class Product {
         this.description = description;
     }
 
-    public int getNo_in_stock() {
-        return no_in_stock;
+    public int getNoInStock() {
+        return noInStock;
     }
 
-    public void setNo_in_stock(int no_in_stock) {
-        this.no_in_stock = no_in_stock;
+    public void setNoInStock(int noInStock) {
+        this.noInStock = noInStock;
     }
 
     @Override
     public String toString() {
         return "Product{" +
-                "product_no='" + product_no + '\'' +
+                "productNo='" + productNo + '\'' +
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 ", description='" + description + '\'' +
-                ", no_in_stock=" + no_in_stock +
+                ", noInStock=" + noInStock +
                 '}';
     }
 }

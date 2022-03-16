@@ -45,4 +45,12 @@ public class ShoppingCart {
         int index = products.indexOf(previousCartLine);
         products.set(index, newCartLine);
     }
+
+    @Override
+    public String toString() {
+        return "ShoppingCart{" +
+                "shoppingCartNumber='" + shoppingCartNumber + '\'' +
+                ", products=" + products +
+                '}';
+    }
 }
