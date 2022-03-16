@@ -15,7 +15,7 @@ public class ShoppingCartService {
         shoppingCartRepository.save(shoppingCart);
     }
 
-    public ShoppingCart getCart(int cartNumber) {
+    public ShoppingCart getCart(String cartNumber) {
         return shoppingCartRepository.findById(cartNumber).orElseThrow(() -> new RuntimeException("No Cart Found!!!"));
     }
 }

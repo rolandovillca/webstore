@@ -16,7 +16,7 @@ public class ShoppingCartController {
     private ShoppingCartService shoppingCartService;
 
     @GetMapping("viewCartDetail/{cartNumber}")
-    public ResponseEntity<ShoppingCart> viewCartDetail(@PathVariable int cartNumber) {
+    public ResponseEntity<ShoppingCart> viewCartDetail(@PathVariable String cartNumber) {
         return new ResponseEntity<>(shoppingCartService.getCart(cartNumber), HttpStatus.OK);
     }
 }

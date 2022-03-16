@@ -10,6 +10,7 @@ import webshop.domain.CartLine;
 import webshop.domain.Product;
 import webshop.domain.ShoppingCart;
 import webshop.service.ProductService;
+import webshop.service.ShoppingCartQueryService;
 import webshop.service.ShoppingCartService;
 
 import java.util.List;
@@ -24,9 +25,12 @@ public class WebShopRestClientApplication implements CommandLineRunner {
 
 	ShoppingCartService shoppingCartService;
 
-	WebShopRestClientApplication(ProductService productService,ShoppingCartService shoppingCartService){
+	ShoppingCartQueryService shoppingCartQueryService;
+
+	WebShopRestClientApplication(ProductService productService,ShoppingCartService shoppingCartService,ShoppingCartQueryService shoppingCartQueryService){
 		this.productService = productService;
 		this.shoppingCartService = shoppingCartService;
+		this.shoppingCartQueryService = shoppingCartQueryService;
 	}
 
 	public static void main(String[] args) {
@@ -63,12 +67,17 @@ public class WebShopRestClientApplication implements CommandLineRunner {
 		shoppingCartService.addProduct(shoppingCart.getShoppingCartNumber(),new CartLine("75468",4));
 
 		log.info("============Updating shopping cart ===============");
-		shoppingCart = shoppingCartService.changeQuantity(shoppingCart.getShoppingCartNumber(),new CartLine("75467",5));
+		shoppingCartService.changeQuantity(shoppingCart.getShoppingCartNumber(),new CartLine("75467",5));
 
 
-		log.info("============Removing product to shopping cart ===============");
+		log.info("============Viewing shopping shopping cart ===============");
+		ShoppingCart viewShoppingCart = shoppingCartQueryService.viewCartDetail(shoppingCart.getShoppingCartNumber());
+
+
+
+		/*log.info("============Removing product to shopping cart ===============");
 		shoppingCartService.removeProduct(shoppingCart.getShoppingCartNumber(),new CartLine("75468",4));
-
+*/
 
 		/*log.info("============Checkout shopping cart ===============");
 		shoppingCartService.checkout(shoppingCart.getShoppingCartNumber());*/
