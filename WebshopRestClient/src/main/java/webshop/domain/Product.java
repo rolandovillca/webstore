@@ -1,9 +1,6 @@
 package webshop.domain;
 
 
-import lombok.ToString;
-
-@ToString
 public class Product {
 
     private String product_no;
@@ -16,7 +13,7 @@ public class Product {
 
     private int no_in_stock;
 
-    public Product(){
+    public Product() {
 
     }
 
@@ -66,5 +63,16 @@ public class Product {
 
     public void setNo_in_stock(int no_in_stock) {
         this.no_in_stock = no_in_stock;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "product_no='" + product_no + '\'' +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", no_in_stock=" + no_in_stock +
+                '}';
     }
 }

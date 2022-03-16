@@ -36,6 +36,6 @@ public class OrderEmailListener {
         Customer customer = customerRepository
                 .findById(customerId)
                 .orElseThrow(() -> new RuntimeException(msgEmail));
-        System.out.println("Email sent to customer: " + customerId + ", OrderId: " + orderPlacedEvent.getOrderId());
+        System.out.println("Email sent to customer: " + customer.getFirstName() + " , " + customer.getEmail() + ", OrderId: " + orderPlacedEvent.getOrderId());
     }
 }

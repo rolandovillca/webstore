@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import webshop.domain.CartLine;
 import webshop.domain.ShoppingCart;
 
-@FeignClient("shopping-cart-command-service")
+@FeignClient(name = "shopping-cart-command-service", url = "http://localhost:8079/shopping-cart-command-service")
 public interface ShoppingCartService {
 
     @GetMapping("createCart")

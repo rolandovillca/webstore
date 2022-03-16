@@ -58,13 +58,13 @@ public class ShoppingCartService {
 
     public void checkout(String cartNumber) {
         //Do we need to get customer ID?
-        kafkaCreateOrderSender.send("cart_checkout_topic", new CartCheckoutEvent(cartNumber));
+        kafkaCreateOrderSender.send("shopping-cart-checkout-topic", new CartCheckoutEvent(cartNumber));
     }
 
 
     private CartLine getCurrentCartLine(CartLine newCartLine, List<CartLine> products) {
         for (CartLine cartLine : products) {
-            if (cartLine.getProductNo() == newCartLine.getProductNo()) return cartLine;
+            if (cartLine.getProductNo() .equalsIgnoreCase(newCartLine.getProductNo()) ) return cartLine;
         }
         return null;
     }
