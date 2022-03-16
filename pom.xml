@@ -16,7 +16,7 @@
         <module>config-server</module>
         <module>eureka-server</module>
         <module>spring-cloud-gateway</module>
-        <module>WebShopRestClient</module>
+        <module>WebshopRestClient</module>
     </modules>
 
 </project>
