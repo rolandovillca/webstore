@@ -66,7 +66,7 @@ public class ShoppingCart {
 
     private CartLine checkIfPresent(CartLine cartLine) {
         for(CartLine cartLine1: products) {
-            if(cartLine.getProductNo() == cartLine1.getProductNo())
+            if(cartLine.getProductNo().equalsIgnoreCase(cartLine1.getProductNo()))
                 return cartLine1;
         }
         return null;

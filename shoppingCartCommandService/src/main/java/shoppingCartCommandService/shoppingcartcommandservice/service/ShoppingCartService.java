@@ -6,23 +6,30 @@ import shoppingCartCommandService.shoppingcartcommandservice.events.CartCheckout
 import shoppingCartCommandService.shoppingcartcommandservice.kafka.KafkaCreateOrderSender;
 import shoppingCartCommandService.shoppingcartcommandservice.kafka.KafkaShoppingCartQuerySender;
 import shoppingCartCommandService.shoppingcartcommandservice.model.CartLine;
+import shoppingCartCommandService.shoppingcartcommandservice.model.Product;
 import shoppingCartCommandService.shoppingcartcommandservice.model.ShoppingCart;
 import shoppingCartCommandService.shoppingcartcommandservice.repository.ShoppingCartRepository;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @Service
 public class ShoppingCartService {
-    @Autowired
-    private ShoppingCartRepository shoppingCartRepository;
-    @Autowired
-    private KafkaShoppingCartQuerySender kafkaShoppingCartQuerySender;
-    @Autowired
-    private KafkaCreateOrderSender kafkaCreateOrderSender;
-/*    @Autowired
-    private RestTemplate restTemplate;*/
+    private final ShoppingCartRepository shoppingCartRepository;
+    private final KafkaShoppingCartQuerySender kafkaShoppingCartQuerySender;
+    private final KafkaCreateOrderSender kafkaCreateOrderSender;
+    private final ProductQueryService productQueryService;
+
+    public ShoppingCartService(ShoppingCartRepository shoppingCartRepository,
+                               KafkaShoppingCartQuerySender kafkaShoppingCartQuerySender,
+                               KafkaCreateOrderSender kafkaCreateOrderSender,
+                               ProductQueryService productQueryService) {
+
+        this.shoppingCartRepository = shoppingCartRepository;
+        this.kafkaShoppingCartQuerySender = kafkaShoppingCartQuerySender;
+        this.kafkaCreateOrderSender = kafkaCreateOrderSender;
+        this.productQueryService = productQueryService;
+    }
 
     public ShoppingCart addProduct(String cartNumber, CartLine cartLine) {
         ShoppingCart cart = shoppingCartRepository.findById(cartNumber).orElseThrow(() -> new RuntimeException("Cart Not Found"));
@@ -71,14 +78,16 @@ public class ShoppingCartService {
 
     private boolean hasStock(CartLine cartLine) {
         //use eureka server and seperate interface for api call.
- /*       Product prod = restTemplate.getForEntity("localhost:8081/products/"+cartLine.getProductId(), Product.class).getBody();
-        return prod.getNo_in_stock() < cartLine.getQuantity() ? true : false;*/
-        return true;
+        Product prod = productQueryService.getProduct(cartLine.getProductNo());
+
+        System.out.println("---------No in stock: "+prod+"----");
+        return prod.getNoInStock() > cartLine.getQuantity() ? true : false;
     }
 
     public ShoppingCart save() {
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.setShoppingCartNumber(UUID.randomUUID().toString());
+        kafkaShoppingCartQuerySender.send("shopping_cart_query_topic1", shoppingCart);
         return shoppingCartRepository.save(shoppingCart);
     }
 }
