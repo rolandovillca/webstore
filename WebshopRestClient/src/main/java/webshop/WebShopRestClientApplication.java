@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import webshop.domain.CartLine;
 import webshop.domain.Product;
@@ -16,7 +15,6 @@ import webshop.service.ShoppingCartService;
 import java.util.List;
 
 @SpringBootApplication
-@EnableDiscoveryClient
 @EnableFeignClients
 @Slf4j
 public class WebShopRestClientApplication implements CommandLineRunner {
@@ -73,7 +71,7 @@ public class WebShopRestClientApplication implements CommandLineRunner {
 
         log.info("============Viewing shopping shopping cart ===============");
         ShoppingCart viewShoppingCart = shoppingCartQueryService.viewCartDetail(shoppingCart.getShoppingCartNumber());
-
+        log.info("============ Shopping Cart = {} ===============",viewShoppingCart);
 
         log.info("============Removing product to shopping cart ===============");
         shoppingCartService.removeProduct(shoppingCart.getShoppingCartNumber(), new CartLine("75468", 4));
