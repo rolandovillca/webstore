@@ -9,6 +9,6 @@ import webshop.domain.ShoppingCart;
 public interface ShoppingCartQueryService {
 
     @GetMapping("viewCartDetail/{cartNumber}")
-    ShoppingCart viewCartDetail(@PathVariable int cartNumber);
+    ShoppingCart viewCartDetail(@PathVariable String cartNumber);
 
 }
