@@ -24,19 +24,12 @@ public class ShoppingCartService {
 /*    @Autowired
     private RestTemplate restTemplate;*/
 
-    public ShoppingCart addProduct(String cartNumber, List<CartLine> cartLines) {
-        System.out.println(" -------- "+cartNumber);
-        //Need to check if cart has enough in stock\
-        Optional<ShoppingCart> byId = shoppingCartRepository.findById(cartNumber);
-
-
+    public ShoppingCart addProduct(String cartNumber, CartLine cartLine) {
         ShoppingCart cart = shoppingCartRepository.findById(cartNumber).orElseThrow(() -> new RuntimeException("Cart Not Found"));
-        for (CartLine cartLine : cartLines) {
-            if (!this.hasStock(cartLine)) {
-                throw new RuntimeException("Stock not available for product with ID:" + cartLine.getProductId());
-            }
+        if (!this.hasStock(cartLine)) {
+            throw new RuntimeException("Stock not available for product with ID:" + cartLine.getProductNo());
         }
-        cart.setProducts(cartLines);
+        cart.addProduct(cartLine);
         kafkaShoppingCartQuerySender.send("shopping_cart_query_topic", cart);
         return shoppingCartRepository.save(cart);
     }
@@ -52,10 +45,10 @@ public class ShoppingCartService {
     public ShoppingCart changeQuantity(String cartNumber, CartLine newCartLine) {
         ShoppingCart cart = shoppingCartRepository.findById(cartNumber).orElseThrow(() -> new RuntimeException("Cart Not Found"));
         List<CartLine> products = cart.getProducts();
-        CartLine previousCartLine = getCurrentCartLine(cartNumber, products);
+        CartLine previousCartLine = getCurrentCartLine(newCartLine, products);
         if (newCartLine.getQuantity() > previousCartLine.getQuantity()) {
             if (!this.hasStock(newCartLine)) {
-                throw new RuntimeException("Stock not available for product with ID:" + newCartLine.getProductId());
+                throw new RuntimeException("Stock not available for product with ID:" + newCartLine.getProductNo());
             }
         }
         cart.replaceCartLine(previousCartLine, newCartLine);
@@ -69,9 +62,9 @@ public class ShoppingCartService {
     }
 
 
-    private CartLine getCurrentCartLine(String cartNumber, List<CartLine> products) {
+    private CartLine getCurrentCartLine(CartLine newCartLine, List<CartLine> products) {
         for (CartLine cartLine : products) {
-            if (cartLine.getCartLineNumber().equalsIgnoreCase(cartNumber)) return cartLine;
+            if (cartLine.getProductNo() == newCartLine.getProductNo()) return cartLine;
         }
         return null;
     }

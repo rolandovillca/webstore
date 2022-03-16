@@ -9,6 +9,9 @@ public class OrderPlacedEvent  {
     private String shippingCartId;
     private String customerId;
 
+    public OrderPlacedEvent() {
+    }
+
     public OrderPlacedEvent(String orderId, String shippingCartId, String customerId) {
         this.orderId = orderId;
         this.shippingCartId = shippingCartId;

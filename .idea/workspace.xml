@@ -5,11 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/RestConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/WebShopRestClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/test/java/books/BookRestClientApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/edu/miu/events/OrderEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/edu/miu/listener/OrderEmailListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/webshop/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/webshop/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/webshop/config/KafkaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/webshop/config/KafkaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/webshop/events/OrderPlacedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/webshop/events/OrderPlacedEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/edu/miu/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/edu/miu/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/senders/KafkaMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/senders/KafkaMessageSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/CartLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/CartLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lab-7-soln" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lab-12-soln/part-2" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -87,7 +111,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderService">
+  <component name="RunManager" selected="Spring Boot.ProductService">
     <configuration name="ConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.webstore.configserver.ConfigServerApplication" />
@@ -152,6 +176,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebShopRestClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="WebStoreRestClient" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="webshop.WebShopRestClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="order-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -170,6 +201,7 @@
       <item itemvalue="Spring Boot.EurekaServer" />
       <item itemvalue="Spring Boot.Shoppingcartquery" />
       <item itemvalue="Spring Boot.SpringCloudGateway" />
+      <item itemvalue="Spring Boot.WebShopRestClientApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -225,21 +257,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java</url>
-          <line>28</line>
+          <line>27</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java</url>
-          <line>32</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java</url>
@@ -260,6 +279,21 @@
           <url>file://$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java</url>
           <line>43</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
