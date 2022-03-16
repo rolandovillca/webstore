@@ -13,8 +13,10 @@
         <module>shoppingCartQueryService</module>
         <module>order-service</module>
         <module>customer-service</module>
+        <module>config-server</module>
         <module>eureka-server</module>
         <module>spring-cloud-gateway</module>
+        <module>WebShopRestClient</module>
     </modules>
 
 </project>

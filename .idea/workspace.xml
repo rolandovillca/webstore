@@ -5,34 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/RestConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/WebShopRestClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStoreRestClient/src/test/java/books/BookRestClientApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/edu/miu/events/OrderEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/edu/miu/listener/OrderEmailListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/webshop/config/KafkaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/webshop/config/KafkaConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/webshop/events/OrderPlacedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/webshop/events/OrderPlacedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/edu/miu/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/edu/miu/domain/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/listners/CartCheckoutListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/senders/KafkaMessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/webstore/orderservice/senders/KafkaMessageSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/controller/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/CartLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/CartLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/model/ShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/WebShopRestClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/domain/CartLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/domain/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/service/ShoppingCartQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/service/ShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcartqueryservice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/RestConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/WebShopRestClientApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/java/webshop/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStoreRestClient/src/test/java/books/BookRestClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebshopRestClient/src/test/java/webshop/WebshopRestClientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/repository/ShoppingCartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/service/ShoppingCartService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -282,18 +280,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
-          <line>26</line>
+          <line>36</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="9" />
+          <line>37</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="10" />
+          <line>39</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ProductService/src/main/java/webshop/listener/StockUpdateListener.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
