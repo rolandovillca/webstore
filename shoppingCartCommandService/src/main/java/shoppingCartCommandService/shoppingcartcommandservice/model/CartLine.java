@@ -1,5 +1,7 @@
 package shoppingCartCommandService.shoppingcartcommandservice.model;
 
+import java.util.Objects;
+
 public class CartLine {
 
     private String productNo;
@@ -30,5 +32,18 @@ public class CartLine {
                 "productNo='" + productNo + '\'' +
                 ", quantity=" + quantity +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CartLine cartLine = (CartLine) o;
+        return Objects.equals(productNo, cartLine.productNo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(productNo);
     }
 }

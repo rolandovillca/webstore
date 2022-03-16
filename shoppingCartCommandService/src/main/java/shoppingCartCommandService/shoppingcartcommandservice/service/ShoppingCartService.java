@@ -43,7 +43,6 @@ public class ShoppingCartService {
 
     public ShoppingCart removeProduct(String cartNumber, CartLine cartLine) {
         ShoppingCart cart = shoppingCartRepository.findById(cartNumber).orElseThrow(() -> new RuntimeException("Cart Not Found"));
-
         cart.removeProduct(cartLine);
         kafkaShoppingCartQuerySender.send("shopping_cart_query_topic1", cart);
         return shoppingCartRepository.save(cart);
@@ -71,7 +70,7 @@ public class ShoppingCartService {
 
     private CartLine getCurrentCartLine(CartLine newCartLine, List<CartLine> products) {
         for (CartLine cartLine : products) {
-            if (cartLine.getProductNo() .equalsIgnoreCase(newCartLine.getProductNo()) ) return cartLine;
+            if (cartLine.getProductNo().equalsIgnoreCase(newCartLine.getProductNo())) return cartLine;
         }
         return null;
     }
@@ -80,7 +79,7 @@ public class ShoppingCartService {
         //use eureka server and seperate interface for api call.
         Product prod = productQueryService.getProduct(cartLine.getProductNo());
 
-        System.out.println("---------No in stock: "+prod+"----");
+        System.out.println("---------No in stock: " + prod + "----");
         return prod.getNoInStock() > cartLine.getQuantity() ? true : false;
     }
 
