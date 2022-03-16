@@ -22,7 +22,6 @@ public class KafkaShoppingCartListener {
     @KafkaListener(topics = CART_QUERY_TOPIC)
     public void addProducts(@Payload String shoppingCartString) {
         System.out.println("----  CART QUERY TOPIC RECEIVED MESSAGE ---");
-
         ObjectMapper objectMapper = new ObjectMapper();
         ShoppingCart shoppingCart = null;
         try {

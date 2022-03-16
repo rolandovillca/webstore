@@ -3,24 +3,25 @@ package edu.miu.service;
 import edu.miu.data.CustomerRepository;
 import edu.miu.domain.Customer;
 import edu.miu.integration.EmailSender;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
-    @Autowired
-    private CustomerRepository customerRepository;
+    private final CustomerRepository customerRepository;
 
-    @Autowired
-    private EmailSender emailSender;
+    private final EmailSender emailSender;
+
+    public CustomerServiceImpl(CustomerRepository customerRepository, EmailSender emailSender) {
+        this.customerRepository = customerRepository;
+        this.emailSender = emailSender;
+    }
 
     @Override
     public void addCustomer(Customer customer) {
-        String customerId = customer.getCustomerId();
         customerRepository.save(customer);
-        emailSender.sendEmail(customer.getEmail(), "Added customer: " + customerId);
+        emailSender.sendEmail(customer.getEmail(), "Added customer: " + customer.getCustomerId());
     }
 
     @Override
@@ -48,7 +49,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Collection<Customer> findAllCustomers(){
+    public Collection<Customer> findAllCustomers() {
         return customerRepository.findAll();
     }
 }
