@@ -1,6 +1,9 @@
 package webshop.domain;
 
 
+import lombok.ToString;
+
+@ToString
 public class Product {
 
     private String product_no;

@@ -26,9 +26,9 @@ public class StockUpdateListener {
 
         shoppingCart.getProducts().forEach(cartLine -> {
             Product product = productService.findById(cartLine.getProductId());
-            int quantity = product.getNoInStock() - productStockDTO.qty();
-            log.info("Product quantity updated with value:" + quantity);
-            product.setNoInStock(quantity);
+           // int quantity = product.getNoInStock() - productStockDTO.qty();
+            //log.info("Product quantity updated with value:" + quantity);
+            //product.setNoInStock(quantity);
             productService.update(product);
 
         });
@@ -37,6 +37,7 @@ public class StockUpdateListener {
     }
 
     private ShoppingCart getShoppingCartDetail(String shippingCartId) {
+        return null;
     }
 
     private record ProductStockDTO(String productNumber, int qty) {
