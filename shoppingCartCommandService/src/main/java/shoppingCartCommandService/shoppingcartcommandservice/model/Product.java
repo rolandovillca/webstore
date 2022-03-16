@@ -57,4 +57,15 @@ public class Product {
     public void setNoInStock(int noInStock) {
         this.noInStock = noInStock;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productNo='" + productNo + '\'' +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", noInStock=" + noInStock +
+                '}';
+    }
 }
