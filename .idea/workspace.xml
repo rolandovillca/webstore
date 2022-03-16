@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/WebshopRestClient/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/WebshopRestClient/src/main/java/webshop/WebShopRestClientApplication.java" afterDir="false" />
@@ -31,6 +32,16 @@
       <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/controller/ShoppingCartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/repository/ShoppingCartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/repository/ShoppingCartRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/service/ShoppingCartService.java" afterDir="false" />
+=======
+    <list default="true" id="52323a14-67fd-4deb-9b14-116c5b93a5f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/configs/KafkaConfigs.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/configs/KafkaConfigs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/kafka/KafkaCreateOrderSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/kafka/KafkaCreateOrderSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/kafka/KafkaShoppingCartQuerySender.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/kafka/KafkaShoppingCartQuerySender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartCommandService/src/main/java/shoppingCartCommandService/shoppingcartcommandservice/service/ShoppingCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/kafka/KafkaShoppingCartListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCartQueryService/src/main/java/shoppingCartQueryService/shoppingcartqueryservice/kafka/KafkaShoppingCartListener.java" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-gateway/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +49,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -62,10 +74,28 @@
   <component name="ProjectId" id="26MAj9btLjwKhleCn5uk6Hk6v7P" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="26RvYJXM9YUDcayk26fo5ybi0GG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+>>>>>>> Stashed changes
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< Updated upstream
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -122,18 +152,46 @@
       <module name="customer-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="edu.miu.CustomerServiceApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+=======
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.SpringCloudGatewayApplication">
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.webstore.configserver.ConfigServerApplication" />
+      <module name="config-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webstore.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> Stashed changes
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="EurekaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="demo.EurekaServerApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+=======
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.EurekaServerApplication" />
+      <module name="eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> Stashed changes
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="OrderService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="order-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.webstore.orderservice.OrderServiceApplication" />
@@ -154,26 +212,62 @@
       <module name="shoppingcartcommandservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="shoppingCartCommandService.shoppingcartcommandservice.ShoppingcartcommandserviceApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+=======
+    <configuration name="ShoppingcartcommandserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="shoppingCartCommandService.shoppingcartcommandservice.ShoppingcartcommandserviceApplication" />
+      <module name="shoppingcartcommandservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shoppingCartCommandService.shoppingcartcommandservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> Stashed changes
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="Shoppingcartquery" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="shoppingcartqueryservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="shoppingCartQueryService.shoppingcartqueryservice.ShoppingcartqueryserviceApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+=======
+    <configuration name="ShoppingcartqueryserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="shoppingCartQueryService.shoppingcartqueryservice.ShoppingcartqueryserviceApplication" />
+      <module name="shoppingcartqueryservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shoppingCartQueryService.shoppingcartqueryservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> Stashed changes
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="SpringCloudGateway" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-cloud-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.webshop.springcloudgateway.SpringCloudGatewayApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+=======
+    <configuration name="SpringCloudGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.webshop.springcloudgateway.SpringCloudGatewayApplication" />
+      <module name="spring-cloud-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webshop.springcloudgateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> Stashed changes
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< Updated upstream
     <configuration name="WebShopRestClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="WebStoreRestClient" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="webshop.WebShopRestClientApplication" />
@@ -204,12 +298,22 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.order-service: Compose Deployment" />
+=======
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ShoppingcartqueryserviceApplication" />
+        <item itemvalue="Application.ShoppingcartcommandserviceApplication" />
+        <item itemvalue="Application.SpringCloudGatewayApplication" />
+        <item itemvalue="Application.ConfigServerApplication" />
+        <item itemvalue="Application.EurekaServerApplication" />
+>>>>>>> Stashed changes
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< Updated upstream
       <changelist id="5651142f-4630-4c2c-acf3-3121e18ca672" name="Changes" comment="" />
       <created>1647223214635</created>
       <option name="number" value="Default" />
@@ -239,6 +343,16 @@
     <option featureType="dependencySupport" implementationName="java:com.google.inject:guice" />
     <option featureType="dependencySupport" implementationName="java:org.apache.kafka:kafka-clients" />
   </component>
+=======
+      <changelist id="52323a14-67fd-4deb-9b14-116c5b93a5f6" name="Changes" comment="" />
+      <created>1647399259223</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647399259223</updated>
+    </task>
+    <servers />
+  </component>
+>>>>>>> Stashed changes
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -249,6 +363,7 @@
         </entry>
       </map>
     </option>
+<<<<<<< Updated upstream
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -315,5 +430,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+=======
+    <option name="oldMeFiltersMigrated" value="true" />
+>>>>>>> Stashed changes
   </component>
 </project>

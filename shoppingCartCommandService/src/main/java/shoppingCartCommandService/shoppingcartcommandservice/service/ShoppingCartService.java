@@ -30,7 +30,7 @@ public class ShoppingCartService {
             throw new RuntimeException("Stock not available for product with ID:" + cartLine.getProductNo());
         }
         cart.addProduct(cartLine);
-        kafkaShoppingCartQuerySender.send("shopping_cart_query_topic", cart);
+        kafkaShoppingCartQuerySender.send("shopping_cart_query_topic1", cart);
         return shoppingCartRepository.save(cart);
     }
 
@@ -38,7 +38,7 @@ public class ShoppingCartService {
         ShoppingCart cart = shoppingCartRepository.findById(cartNumber).orElseThrow(() -> new RuntimeException("Cart Not Found"));
 
         cart.removeProduct(cartLine);
-        kafkaShoppingCartQuerySender.send("shopping_cart_query_topic", cart);
+        kafkaShoppingCartQuerySender.send("shopping_cart_query_topic1", cart);
         return shoppingCartRepository.save(cart);
     }
 
@@ -52,7 +52,7 @@ public class ShoppingCartService {
             }
         }
         cart.replaceCartLine(previousCartLine, newCartLine);
-        kafkaShoppingCartQuerySender.send("shopping_cart_query_topic", cart);
+        kafkaShoppingCartQuerySender.send("shopping_cart_query_topic1", cart);
         return shoppingCartRepository.save(cart);
     }
 
