@@ -7,7 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class OrderEvent {
+public class OrderPlacedEvent {
     private String orderId;
     private String shippingCartId;
     private String customerId;

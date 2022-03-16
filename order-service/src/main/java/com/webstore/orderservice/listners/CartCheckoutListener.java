@@ -34,7 +34,7 @@ public class CartCheckoutListener {
         logger.info("-- Cart Checkout Message Received {} -- ", cartCheckoutEvent);
         Order order = prepareOrder(cartCheckoutEvent);
         orderRepository.save(order);
-        kafkaMessageSender.dispatchOrderPlacedEvent(new OrderPlacedEvent(order.getOrderId(), order.getCustomerId(), order.getShoppingCartId()));
+        kafkaMessageSender.dispatchOrderPlacedEvent(new OrderPlacedEvent(order.getOrderId(), order.getShoppingCartId(), order.getCustomerId()));
     }
 
     private Order prepareOrder(CartCheckoutEvent cartCheckoutEvent) {
