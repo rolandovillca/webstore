@@ -1,5 +1,7 @@
 package com.webstore.orderservice.listners;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.webstore.orderservice.domains.Order;
 import com.webstore.orderservice.events.CartCheckoutEvent;
 import com.webstore.orderservice.events.OrderPlacedEvent;
@@ -30,11 +32,24 @@ public class CartCheckoutListener {
     }
 
     @KafkaListener(topics = SHOPPING_CART_CHECKOUT_TOPIC)
-    public void receive(@Payload CartCheckoutEvent cartCheckoutEvent) {
+    public void receive(@Payload String cartCheckoutEventString) {
+        System.out.println("--- SHOPPING CART CHECKOUT EVENT RECEIVED ---");
+        CartCheckoutEvent cartCheckoutEvent = getCartCheckoutEventFromString(cartCheckoutEventString);
         logger.info("-- Cart Checkout Message Received {} -- ", cartCheckoutEvent);
         Order order = prepareOrder(cartCheckoutEvent);
         orderRepository.save(order);
         kafkaMessageSender.dispatchOrderPlacedEvent(new OrderPlacedEvent(order.getOrderId(), order.getShoppingCartId(), order.getCustomerId()));
+    }
+
+    private CartCheckoutEvent getCartCheckoutEventFromString(String cartCheckoutEventString) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        CartCheckoutEvent cartCheckoutEvent = null;
+        try {
+            cartCheckoutEvent = objectMapper.readValue(cartCheckoutEventString, CartCheckoutEvent.class);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        return cartCheckoutEvent;
     }
 
     private Order prepareOrder(CartCheckoutEvent cartCheckoutEvent) {

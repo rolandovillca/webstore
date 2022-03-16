@@ -7,7 +7,7 @@ import webshop.domain.Product;
 import java.util.List;
 
 
-@FeignClient("product-service")
+@FeignClient(name = "product-service",url = "http://localhost:8079/product-service")
 public interface ProductService {
 
     @GetMapping("/products/{productNumber}")
