@@ -51,9 +51,11 @@ public class ShoppingCart {
         products.remove(cartLine);
     }
 
-    public void replaceCartLine(CartLine previousCartLine, CartLine newCartLine) {
-        int index = products.indexOf(previousCartLine);
-        products.set(index, newCartLine);
+    public void changeQuantity(CartLine newCartLine) {
+        this.products.forEach(cartLine -> {
+            if (cartLine.getProductNo().equalsIgnoreCase(newCartLine.getProductNo()))
+                cartLine.setQuantity(newCartLine.getQuantity());
+        });
     }
 
     @Override

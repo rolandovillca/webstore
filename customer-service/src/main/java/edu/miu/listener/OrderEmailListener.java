@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.miu.data.CustomerRepository;
 import edu.miu.domain.Customer;
 import edu.miu.events.OrderPlacedEvent;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
@@ -14,7 +13,6 @@ import org.springframework.stereotype.Service;
 public class OrderEmailListener {
     private static final String ORDER_CUSTOMER_TOPIC = "order-placed-topic-1";
 
-    @Autowired
     private final CustomerRepository customerRepository;
 
     public OrderEmailListener(CustomerRepository customerRepository) {
@@ -24,6 +22,16 @@ public class OrderEmailListener {
     @KafkaListener(topics = ORDER_CUSTOMER_TOPIC)
     public void receive(@Payload String orderPlacedEventStringFormat) {
         System.out.println("--- ORDER PLACED EVENT RECEIVED ---");
+        OrderPlacedEvent orderPlacedEvent = prepareOrderPlacedEvent(orderPlacedEventStringFormat);
+        String customerId = orderPlacedEvent.getCustomerId();
+        String msgEmail = "Customer ID: " + customerId + " was not found for OrderId:" + orderPlacedEvent.getOrderId();
+        Customer customer = customerRepository
+                .findById(customerId)
+                .orElseThrow(() -> new RuntimeException(msgEmail));
+        System.out.println("Email sent to customer: " + customer.getFirstName() + " , " + customer.getEmail() + ", OrderId: " + orderPlacedEvent.getOrderId());
+    }
+
+    private OrderPlacedEvent prepareOrderPlacedEvent(String orderPlacedEventStringFormat) {
         ObjectMapper objectMapper = new ObjectMapper();
         OrderPlacedEvent orderPlacedEvent = null;
         try {
@@ -31,11 +39,6 @@ public class OrderEmailListener {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
-        String customerId = orderPlacedEvent.getCustomerId();
-        String msgEmail = "Customer ID: " + customerId + " was not found for OrderId:" + orderPlacedEvent.getOrderId();
-        Customer customer = customerRepository
-                .findById(customerId)
-                .orElseThrow(() -> new RuntimeException(msgEmail));
-        System.out.println("Email sent to customer: " + customer.getFirstName() + " , " + customer.getEmail() + ", OrderId: " + orderPlacedEvent.getOrderId());
+        return orderPlacedEvent;
     }
 }

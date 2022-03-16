@@ -14,7 +14,7 @@ import java.util.Optional;
 @Slf4j
 public class ProductServiceImpl implements ProductService{
 
-    private ProductRepository productRepository;
+    private final ProductRepository productRepository;
 
     public ProductServiceImpl(ProductRepository productRepository){
         this.productRepository = productRepository;
@@ -45,7 +45,7 @@ public class ProductServiceImpl implements ProductService{
     public Product update(Product product) {
         log.info("Checking if product already exist");
         Optional<Product> mayBeProduct = productRepository.findById(product.getProductNo());
-        if(!mayBeProduct.isPresent()) throw  new EntityNotFoundException("Product with id:"+ product.getProductNo()+" not found");
+        if(mayBeProduct.isEmpty()) throw  new EntityNotFoundException("Product with id:"+ product.getProductNo()+" not found");
         log.info("update of product with information {}",product);
         return productRepository.save(product);
     }
