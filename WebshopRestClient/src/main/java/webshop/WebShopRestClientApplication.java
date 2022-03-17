@@ -60,22 +60,30 @@ public class WebShopRestClientApplication implements CommandLineRunner {
 
         log.info("============Creating shopping cart ===============");
         ShoppingCart shoppingCart = shoppingCartService.createShoppingCart();
+        log.info(shoppingCart.toString());
 
         log.info("============Adding product to shopping cart ===============");
-        shoppingCartService.addProduct(shoppingCart.getShoppingCartNumber(), new CartLine("75467", 4));
-        shoppingCartService.addProduct(shoppingCart.getShoppingCartNumber(), new CartLine("75468", 4));
+        CartLine Product1 = new CartLine("75467", 4);
+        CartLine Product2 = new CartLine("75468", 4);
+
+        log.info("Adding product 1: " + Product1);
+        log.info("Adding product 2: " + Product2);
+        shoppingCartService.addProduct(shoppingCart.getShoppingCartNumber(), Product1);
+        shoppingCartService.addProduct(shoppingCart.getShoppingCartNumber(), Product2);
 
         log.info("============Updating shopping cart ===============");
-        shoppingCartService.changeQuantity(shoppingCart.getShoppingCartNumber(), new CartLine("75467", 5));
+        CartLine Product2Updated = new CartLine("75468", 5);
 
+        log.info("Updated Product2 is: "+ Product2Updated);
+        shoppingCartService.changeQuantity(shoppingCart.getShoppingCartNumber(),Product2Updated);
 
         log.info("============Viewing shopping shopping cart ===============");
         ShoppingCart viewShoppingCart = shoppingCartQueryService.viewCartDetail(shoppingCart.getShoppingCartNumber());
-        log.info("============ Shopping Cart = {} ===============",viewShoppingCart);
+        log.info(viewShoppingCart.toString());
 
         log.info("============Removing product to shopping cart ===============");
-        shoppingCartService.removeProduct(shoppingCart.getShoppingCartNumber(), new CartLine("75468", 4));
-
+        ShoppingCart finalCart = shoppingCartService.removeProduct(shoppingCart.getShoppingCartNumber(), new CartLine("75468", 4));
+        log.info("Cart after removal: "+ finalCart);
 
         log.info("============Checkout shopping cart ===============");
         shoppingCartService.checkout(shoppingCart.getShoppingCartNumber());
